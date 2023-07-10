@@ -15,3 +15,9 @@ This document will help you test your app, to make sure it is well suited for an
 ## Keyboard accessibility
 
 The most important thing you _have_ to test, is that your website can be navigated with the keyboard.
+
+If all menu items and page sections are accessible via keyboard, then that's the first most important step, since most other a11y features depend on this.
+
+In most cases, navigatin on a page is done via Tab, Space and Enter.
+
+On **Safari** however, tab only navigates between input fields and popups. To actually navigate the individual _clickable items_ you need to use `⌥⇥` (Option-Tab)
