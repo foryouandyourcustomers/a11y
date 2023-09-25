@@ -17,6 +17,8 @@ jobs:
                 node-version: 17
             - name: Install axe-core/cli
               run: npm i @axe-core/cli --location=global
+            - name: Install chrome
+              uses: browser-actions/setup-chrome@v1
             - name: Install chromedriver
               uses: nanasess/setup-chromedriver@v2
             - name: Test website
