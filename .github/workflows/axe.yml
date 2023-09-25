@@ -1,0 +1,22 @@
+on:
+    workflow_dispatch:
+        inputs: 
+            url:
+                description: 'URL of the website to test'
+                required: true
+                
+
+jobs:
+    axe-core-cli:
+        runs-on: ubuntu-latest
+
+        steps: 
+            - uses: actions/checkout@v3
+            - uses: actions/setup-node@v3
+              with:
+                node-version: 16
+                cache: 'npm'
+            - name: Install axe-core/cli
+              run: npm i @axe-core/cli -g
+            - name: Test website
+              run: axe ${{ github.event.inputs.url }}
