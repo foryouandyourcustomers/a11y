@@ -16,6 +16,8 @@ jobs:
               with:
                 node-version: 17
             - name: Install axe-core/cli
-              run: npm i @axe-core/cli -g
+              run: npm i @axe-core/cli --location=global
+            - name: Install chromedriver
+              uses: nanasess/setup-chromedriver@v2
             - name: Test website
               run: axe ${{ github.event.inputs.url }}
