@@ -1,2 +1,11 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script type="ts">
+	export let data
+</script>
+
+<ul>
+	{#each data.websites as website}
+		<li>
+			<a href="/monitor/{website.name}">{website.name}</a>
+		</li>
+	{/each}
+</ul>

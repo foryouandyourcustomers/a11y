@@ -3,6 +3,14 @@
     {
       "name": "web",
       "path": "web"
+    },
+    {
+      "name": "results",
+      "path": "results"
+    },
+    {
+      "name": "wiki",
+      "path": "wiki"
     }
   ],
   "extensions": {
