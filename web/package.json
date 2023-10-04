@@ -37,6 +37,16 @@
 	"type": "module",
 	"dependencies": {
 		"@types/d3": "^7.4.1",
-		"d3": "^7.8.5"
+		"d3": "^7.8.5",
+		"@vcarl/remark-headings": "^0.1.0",
+		"date-fns": "^2.30.0",
+		"dotenv": "^16.0.3",
+		"jsdom": "^20.0.3",
+		"mdsvex": "^0.11.0",
+		"mdsvex-relative-images": "^1.0.3",
+		"node-html-parser": "^6.1.5",
+		"rehype-autolink-headings": "^6.1.1",
+		"rehype-slug": "^5.1.0",
+		"unist-util-visit": "^5.0.0"
 	}
 }

@@ -1,5 +1,6 @@
 <nav>
 	<a href="/">Home</a>
+	<a href="/wikis">Wiki</a>
 </nav>
 
 <style lang="postcss">
