@@ -1,4 +1,8 @@
-## What kind of impairments are there? 
+---
+title: Foo
+---
+
+## What kind of impairments are there?
 
 Individuals with disabilities exhibit a wide range of diversity, much like those without disabilities, and their impairments also vary significantly. It is crucial to move beyond personal perspectives and understand the diverse ways in which others utilize the web. Recognize that you are not representative of all users. The subsequent section outlines the primary categories of disabilities to consider, along with the special tools they employ to access web content.
 
@@ -6,9 +10,9 @@ Individuals with disabilities exhibit a wide range of diversity, much like those
 
 ### Visual impairments
 
-People with visual impairments may have difficulty seeing the screen, distinguishing colors, or reading small text. Visual impairments include low vision, total blindness and color deficiency, which affects the ability to distinguish between certain colors. To assess color deficiency, the Ishihara Test is commonly used. The Ishihara Test consists of a series of plates containing colored dots and numbers. People with color vision deficiencies may have difficulty identifying the numbers within the plates, indicating the type and severity of their color vision impairment. 
+People with visual impairments may have difficulty seeing the screen, distinguishing colors, or reading small text. Visual impairments include low vision, total blindness and color deficiency, which affects the ability to distinguish between certain colors. To assess color deficiency, the Ishihara Test is commonly used. The Ishihara Test consists of a series of plates containing colored dots and numbers. People with color vision deficiencies may have difficulty identifying the numbers within the plates, indicating the type and severity of their color vision impairment.
 
-![Color_Deficiency_Ishihara_Test](https://www.aoa.org/AOA/Images/Patients/Eye%20Conditions/Color_Deficiency_Ishihara_Test_AdobeStock_114210620.jpg) 
+![Color_Deficiency_Ishihara_Test](https://www.aoa.org/AOA/Images/Patients/Eye%20Conditions/Color_Deficiency_Ishihara_Test_AdobeStock_114210620.jpg)
 
 > Source: https://www.aoa.org/healthy-eyes/eye-and-vision-conditions/color-vision-deficiency
 
@@ -32,4 +36,4 @@ Individuals with cognitive impairments may have difficulty with memory, attentio
 - Reducing distractions by eliminating unnecessary content or advertisements that may hinder focus and comprehension.
 - Maintaining a consistent webpage layout and navigation structure to promote familiarity and ease of use.
 - Incorporating familiar design elements, such as underlined links turning blue for unvisited links and purple for visited links, to aid navigation and user understanding.
-- Striving for a user-friendly website process (authentication, form completion, ...) 
+- Striving for a user-friendly website process (authentication, form completion, ...)

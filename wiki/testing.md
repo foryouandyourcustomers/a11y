@@ -1,3 +1,7 @@
+---
+title: Foo
+---
+
 # How to test for accessibility
 
 When you prepare a project for accessibity, the most common things you need to take into account are these:
@@ -27,27 +31,28 @@ In most cases, navigatin on a page is done via Tab, Space and Enter.
 <details>
   <summary>Safari</summary>
 
-  On **Safari** tab only navigates between input fields and popups. To actually navigate the individual _clickable items_ you need to use `⌥⇥` (Option-Tab)
+On **Safari** tab only navigates between input fields and popups. To actually navigate the individual _clickable items_ you need to use `⌥⇥` (Option-Tab)
 
-  See [all keyboard shortcuts](https://support.apple.com/en-gb/guide/safari/cpsh003/mac)
+See [all keyboard shortcuts](https://support.apple.com/en-gb/guide/safari/cpsh003/mac)
+
 </details>
 
 > It's specifically important that you test things like the main menu and make sure that you can open it (if it is an expandable menu) and that each item is selectable via Space / Enter
 
-### Screenreaders 
+### Screenreaders
 
 Once everything can be reached via keyboard, the next thing to look out for, is that blind people know what they are focusing, and where a link would take them.
 
 <details>
   <summary><h4>macOS</h4></summary>
 
-  That's where screenreaders come in. The easiest, most accessible and widely used screenreader is Apple's Voice Over. You'll find it in the accessiblity section in the system settings.
+That's where screenreaders come in. The easiest, most accessible and widely used screenreader is Apple's Voice Over. You'll find it in the accessiblity section in the system settings.
 
   <img width="827" alt="image" src="https://github.com/foryouandyourcustomers/a11y/assets/133277/2f54fa3b-48f9-4fe0-b011-d00ba968548f">
 
-  On a MacBook it is enabled by pressing TouchID 3 times.
-</details>
+On a MacBook it is enabled by pressing TouchID 3 times.
 
+</details>
 
 Go back to your website and see if you could navigate your site without seeing it.
 
@@ -60,6 +65,3 @@ While manual testing is imperative, automated testing can make sure that you hav
 For automated testing, we recommend to use the [Pa11y](https://pa11y.org) runner. It takes care of the wiring and can run common a11y testing tools (like [axe](https://www.deque.com/axe/)) automatically for you.
 
 TODO: Real world example.
-
-
-
