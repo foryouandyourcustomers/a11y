@@ -25,7 +25,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: pnpm
+          # Need to disable caching for now, since this requires the pnpm-lock
+          # file to be at the root of the repo.
+          # cache: pnpm
 
       - name: Install dependencies
         run: pnpm install
