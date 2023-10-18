@@ -4,20 +4,20 @@
 
 	export let snapshots: WebsiteSnapshot[]
 
-	// $: dataPoints = snapshots.map((snapshot) => {
-	// 	return {
-	// 		passes: snapshot.report.passes.length,
-	// 		incomplete: snapshot.report.incomplete.length,
-	// 		violations: snapshot.report.violations.length
-	// 	}
-	// })
+	$: dataPoints = snapshots.map((snapshot) => {
+		return {
+			passes: snapshot.report.passes.length,
+			incomplete: snapshot.report.incomplete.length,
+			violations: snapshot.report.violations.length
+		}
+	})
 
-	let dataPoints = [
-		{ passes: 5, incomplete: 10, violations: 3 },
-		{ passes: 7, incomplete: 10, violations: 4 },
-		{ passes: 9, incomplete: 7, violations: 3 },
-		{ passes: 11, incomplete: 7, violations: 1 }
-	]
+	// let dataPoints = [
+	// 	{ passes: 5, incomplete: 10, violations: 3 },
+	// 	{ passes: 7, incomplete: 10, violations: 4 },
+	// 	{ passes: 9, incomplete: 7, violations: 3 },
+	// 	{ passes: 11, incomplete: 7, violations: 1 }
+	// ]
 
 	$: totalCount = dataPoints.length
 
