@@ -8,6 +8,9 @@ on:
 
 jobs:
   build_site:
+    defaults:
+      run:
+        working-directory: ./web
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
