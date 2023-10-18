@@ -11,6 +11,10 @@
     {
       "name": "wiki",
       "path": "wiki"
+    },
+    {
+      "name": "github",
+      "path": ".github"
     }
   ],
   "extensions": {
