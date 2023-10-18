@@ -32,9 +32,9 @@ export const posts = Object.entries(import.meta.glob('../../../wiki/**/*.md', { 
 				: undefined,
 
 			preview: {
-				html: preview.toString(),
+				html: preview?.toString() ?? '',
 				// text-only preview (i.e no html elements), used for SEO
-				text: preview.structuredText ?? preview.toString()
+				text: preview?.structuredText ?? preview?.toString() ?? ''
 			}
 		}
 	})
