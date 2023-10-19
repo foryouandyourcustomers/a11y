@@ -12,4 +12,4 @@
 
 <SnapshotSummary {snapshot} />
 
-<SnapshotDetails report={snapshot.report} />
+<SnapshotDetails {snapshot} />

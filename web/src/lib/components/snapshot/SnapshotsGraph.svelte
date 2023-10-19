@@ -1,23 +1,15 @@
+<script lang="ts" context="module">
+	export type DataPoints = {
+		passes: number
+		incomplete: number
+		violations: number
+	}
+</script>
+
 <script lang="ts">
-	import type { WebsiteSnapshot } from '$lib/reports/utils'
 	import { curveCardinal, line, scaleLinear } from 'd3'
 
-	export let snapshots: WebsiteSnapshot[]
-
-	$: dataPoints = snapshots.map((snapshot) => {
-		return {
-			passes: snapshot.report.passes.length,
-			incomplete: snapshot.report.incomplete.length,
-			violations: snapshot.report.violations.length
-		}
-	})
-
-	// let dataPoints = [
-	// 	{ passes: 5, incomplete: 10, violations: 3 },
-	// 	{ passes: 7, incomplete: 10, violations: 4 },
-	// 	{ passes: 9, incomplete: 7, violations: 3 },
-	// 	{ passes: 11, incomplete: 7, violations: 1 }
-	// ]
+	export let dataPoints: DataPoints[]
 
 	$: totalCount = dataPoints.length
 
