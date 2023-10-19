@@ -1,4 +1,4 @@
-import { REPORTS_URL } from '$env/static/private'
+import { REPORTS_URL } from '$lib/const.server'
 import type { WebsiteIndex, WebsiteReport, WebsiteSnapshot, WebsitesConfig } from './types'
 
 export const loadAllWebsites = async () => {
