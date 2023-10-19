@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { WebsiteSnapshot } from '$lib/utils'
+	import type { WebsiteSnapshot } from '$lib/reports/utils'
 	import SnapshotValue from './SnapshotValue.svelte'
 
 	export let snapshot: WebsiteSnapshot

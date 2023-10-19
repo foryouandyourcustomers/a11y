@@ -1,4 +1,4 @@
-import { loadWebsiteSnapshot } from '$lib/utils'
+import { loadWebsiteSnapshot } from '$lib/reports/utils'
 import { error } from '@sveltejs/kit'
 
 export const load = async ({ params }) => {

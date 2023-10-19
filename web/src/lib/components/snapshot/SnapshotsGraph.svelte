@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { WebsiteSnapshot } from '$lib/utils'
+	import type { WebsiteSnapshot } from '$lib/reports/utils'
 	import { curveCardinal, line, scaleLinear } from 'd3'
 
 	export let snapshots: WebsiteSnapshot[]

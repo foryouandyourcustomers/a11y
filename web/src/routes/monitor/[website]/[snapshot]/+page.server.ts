@@ -1,4 +1,4 @@
-import { loadAllWebsites, loadWebsiteSnapshots } from '$lib/utils'
+import { loadAllWebsites, loadWebsiteSnapshots } from '$lib/reports/utils'
 
 export const entries = async () => {
 	const websites = await loadAllWebsites()

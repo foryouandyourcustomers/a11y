@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { format } from 'date-fns'
-	import type { WebsiteReport } from '$lib/utils'
+	import type { WebsiteReport } from '$lib/reports/utils'
 
 	export let report: WebsiteReport
 </script>

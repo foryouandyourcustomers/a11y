@@ -1,10 +1,6 @@
-<script lang="ts">
-	import { base } from '$app/paths'
-</script>
-
 <nav>
-	<a href="{base}/">Home</a>
-	<a href="{base}/wiki">Wiki</a>
+	<a href="/">Home</a>
+	<a href="/wiki">Wiki</a>
 </nav>
 
 <style lang="postcss">
