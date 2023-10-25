@@ -1,17 +1,21 @@
-import { browser } from '$app/environment'
+import { entries } from '$lib/utils'
 import { format } from 'date-fns'
 import { parse } from 'node-html-parser'
 
-// we require some server-side APIs to parse all metadata
-if (browser) {
-	throw new Error(`posts can only be imported server-side`)
+export type Metadata = {
+	title?: string
+	preview?: string
+	date?: string
 }
 
 // Get all posts and add metadata
-export const posts = Object.entries(import.meta.glob('../../../wiki/**/*.md', { eager: true }))
-	.map(([filepath, post]) => {
+export const posts = entries(import.meta.glob('../../../../wiki/**/*.md', { eager: true }))
+	// eslint-disable-next-line @typescript-eslint/no-explicit-any
+	.map(([filepath, post]: [string, any]) => {
 		const html = parse(post.default.render().html)
-		const preview = post.metadata.preview ? parse(post.metadata.preview) : html.querySelector('p')
+
+		const metadata = post.metadata as Metadata
+		const preview = metadata.preview ? parse(metadata.preview) : html.querySelector('p')
 
 		return {
 			...post.metadata,
@@ -23,18 +27,18 @@ export const posts = Object.entries(import.meta.glob('../../../wiki/**/*.md', { 
 				.pop(),
 
 			// format date as yyyy-MM-dd
-			date: post.metadata.date
+			date: metadata.date
 				? format(
 						// offset by timezone so that the date is correct
-						addTimezoneOffset(new Date(post.metadata.date)),
+						addTimezoneOffset(new Date(metadata.date)),
 						'yyyy-MM-dd'
 				  )
 				: undefined,
 
 			preview: {
-				html: preview.toString(),
+				html: preview?.toString() ?? '',
 				// text-only preview (i.e no html elements), used for SEO
-				text: preview.structuredText ?? preview.toString()
+				text: preview?.structuredText ?? preview?.toString() ?? ''
 			}
 		}
 	})
@@ -47,7 +51,7 @@ export const posts = Object.entries(import.meta.glob('../../../wiki/**/*.md', { 
 		previous: allPosts[index + 1]
 	}))
 
-function addTimezoneOffset(date) {
+function addTimezoneOffset(date: Date) {
 	const offsetInMilliseconds = new Date().getTimezoneOffset() * 60 * 1000
 	return new Date(new Date(date).getTime() + offsetInMilliseconds)
 }

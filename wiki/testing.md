@@ -10,7 +10,7 @@ When you prepare a project for accessibity, the most common things you need to t
 - cognitive impairements
 - degraded motor skills
 
-See the [list of disabilities](./disabilities) to get a sense of what common disabilities are that you might not take into account.
+See the [list of impairments](./impairments) to get a sense of what common disabilities are that you might not take into account.
 
 Luckily, there are improvements that you can make to your app that will benefit people with any of these restrictions. For these, checkout the [a11y low hanging fruits](low-hanging-fruits).
 
@@ -56,7 +56,7 @@ On a MacBook it is enabled by pressing TouchID 3 times.
 
 Go back to your website and see if you could navigate your site without seeing it.
 
-To get a feeling of how this technology works on an ideal page, visit the [best practices page](./best-practices.md)
+To get a feeling of how this technology works on an ideal page, visit the [best practices page](./best-practices)
 
 ## Automated testing
 

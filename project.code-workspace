@@ -5,12 +5,12 @@
       "path": "web"
     },
     {
-      "name": "results",
-      "path": "results"
-    },
-    {
       "name": "wiki",
       "path": "wiki"
+    },
+    {
+      "name": "github",
+      "path": ".github"
     }
   ],
   "extensions": {

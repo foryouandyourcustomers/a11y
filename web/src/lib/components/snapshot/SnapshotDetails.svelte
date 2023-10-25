@@ -1,22 +1,22 @@
 <script lang="ts">
+	import type { WebsiteSnapshot } from '$lib/reports/types'
 	import { format } from 'date-fns'
-	import type { WebsiteReport } from '$lib/utils'
 
-	export let report: WebsiteReport
+	export let snapshot: WebsiteSnapshot
 </script>
 
 <div class="details">
-	{format(new Date(report.timestamp), 'PPP')}<br />
-	{report.url}
+	{format(new Date(snapshot.date), 'PPP')}<br />
+	{snapshot.name}
 	<details>
 		<summary> Details </summary>
 		<dl>
 			<dt>Exact time</dt>
-			<dd>{report.timestamp}</dd>
+			<dd>{snapshot.reports[0].timestamp}</dd>
 			<dt>URL</dt>
-			<dd>{report.url}</dd>
+			<dd>{snapshot.reports[0].url}</dd>
 		</dl>
-		<pre>{JSON.stringify(report.testEnvironment)}</pre>
+		<pre>{JSON.stringify(snapshot.reports[0].testEnvironment)}</pre>
 	</details>
 </div>
 

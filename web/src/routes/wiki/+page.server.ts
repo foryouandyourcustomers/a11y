@@ -1,4 +1,4 @@
-import { posts } from '$lib/posts'
+import { posts } from '$lib/server/posts'
 
 export async function load() {
 	return {
